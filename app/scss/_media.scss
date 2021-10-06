@@ -5,22 +5,114 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+    .header{
+        display: none;
+    }
+    .h1-banner{
+        width: 100%;
+    }
+    .green-line{
+        display: none;
+    }
+    .info-harris{
+        padding-top: 170px;
+       }
+    .h2-harris{
+        padding-top: 60px;
+    }
+    .img-harris{
+        padding-left: 0;
+    }
+    .name-harris{
+        padding-top: 0px;
+    }
+    .text-harris{
+        padding-bottom: 0px;
+    }
+    .popup-section{
+        padding-top:78px;
+    }
+    .h2-popup,.p-popup,.small-p-popup{
+        text-align: center;
+        max-width: 100%;
+    }
+    .popup-video, .green-line-stone{
+        display: none;
+    }
+    .dominate-section{
+        padding-top:30px;
+    }
+    .h3-dominate,.p-dominate{
+        max-width: 100%;
+    }
+    .img-for-dominate{
+        margin-top:30px;
+    }
+    .h2-form{
+        max-width: 100%;
+        padding-bottom: 23px;
+    }
+    .contact-form{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .input{
+        justify-content: center;
+    }
+    .big-input{
+        width: 353px;
+    }
+    
+    .img-results{
+        width: 60%;
+    }
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
+   
+  
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-
+    .img-results{
+        display: block;
+        max-width:275px;
+        padding-left: 41px;
+    }
+    .h2-harris{
+        padding-bottom: 0px;
+    } 
+    .info-harris{
+        padding-top: 0px;
+    }
+    .stone-section{
+        padding-top: 30px;
+    }
+    .img-stone{
+        padding-left: 0;
+    }
+    .h2-stone{
+        padding-bottom: 0;
+    }
+    .info-stone{
+        padding-top: 0;
+    }
+    .img-for-dominate{
+        margin-left: 0;
+    }
+    .input,.big-input{
+        width: 320px;
+    }
+    .btn-results{
+        width: 300px;
+    }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
+    
 }
 
 
@@ -38,7 +130,7 @@
 
 // ≤992px
 @include media-breakpoint-up(lg) {
-
+   
 }
 
 // ≤1200px

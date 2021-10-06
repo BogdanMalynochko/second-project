@@ -12,8 +12,8 @@ a{
 // styles for banner section
 .banner-section{
 	background: url(/img/Rectangle\ 649.svg);
-	
 	background-size: cover;
+	padding-bottom: 84px;
 }
 header{
 	height: 80px;
@@ -27,10 +27,9 @@ header{
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 24px;
-		margin-left: 28px;
-		margin-right: 28px;
 		color: #ffffff;
 		align-items: center;
+		padding-left: 0;
 		a{
 			color: #ffffff;
 		}
@@ -94,7 +93,6 @@ header{
 	background-color: rgba(37,221,126,var(--tw-bg-opacity));
 	font-size: 1.25rem;
 	--tw-bg-opacity: 1;
-	margin-bottom: 84px;
 	text-decoration: none; 
 }
 .btn-banner:hover{
@@ -445,6 +443,11 @@ header{
 	padding-bottom: 64px;
 	padding-top: 80px;
 }
+.contact-form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
 .span-for-form{
 	color: #25DD7E;
 }
@@ -471,9 +474,10 @@ header{
 .big-input{
 	display: block;
 	height: 158px;
-    width: 714px;
+    width: 726px;
     border-radius: .125rem;
     padding: 1rem;
+	margin-top: 20px;
     padding-left: 1.5rem;
 	line-height: inherit;
 	border: 0 solid #e5e7eb;
