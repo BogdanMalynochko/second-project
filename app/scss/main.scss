@@ -11,7 +11,7 @@ a{
 }
 // styles for banner section
 .banner-section{
-	background: url(/img/rectangle.svg);
+	background: url(../img/rectangle.svg);
 	background-size: cover;
 	padding-bottom: 84px;
 }
@@ -19,6 +19,8 @@ header{
 	height: 80px;
 	display: flex;
 	align-items: center;
+	position: fixed;
+	width: 100%;
 	.main-menu{
 		display: flex;
 		list-style: none;
@@ -37,8 +39,9 @@ header{
 	.main-menu-el{
 		font-family: Oswald;
 		display: flex;
-		margin-left: 28px;
 		margin-right: 28px;
+		margin-left: 28px;
+		text-align: center;
 		text-transform: uppercase;
 		font-style: normal;
 		font-weight: 600;
@@ -66,7 +69,7 @@ header{
 	font-weight: 500;
 	font-size: 24px;
 	color: #ffffff;
-	padding-top: 80px;
+	padding-top: 130px;
 	padding-bottom: 36px;
 }
 .h1-banner{
@@ -103,7 +106,20 @@ header{
 	right: 0;
 	position: absolute;
 }
-
+header.sticky{
+	background: rgb(255, 255, 255);
+	transition: 0.5s;
+	z-index: 10000;
+}
+header.sticky ul li a {
+	color: #000;
+}
+header.sticky .header-number{
+	color: #000;
+}
+.mobile-button{
+	margin-left: auto;
+}
 //styles for results section
 .white-div{
 	height: 55px;
@@ -282,7 +298,6 @@ header{
 	color: #ffffff;
 }
 .img-for-popup{
-	position: relative;
 	padding-left: 20px;
 	width: max-content;
 	height:100%;
