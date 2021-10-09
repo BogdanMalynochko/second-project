@@ -14,8 +14,9 @@ window.addEventListener("scroll", function(){
 	header.classList.toggle("sticky", window.scrollY > 0);
 })
 
-var button = document.querySelector('.mobile-button');
+var button = document.querySelector('.hamburger');
 var menu = document.querySelector('#header-mobile');
 button.onclick = function(){
-  menu.classList.toggle('active')
+	button.classList.toggle('is-active');
+//   menu.classList.toggle('active');
 }
